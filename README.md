@@ -1,4 +1,4 @@
-# pisid
+# Pisid
 
 Flutter PISID mobile app
 
@@ -12,7 +12,7 @@ Flutter PISID mobile app
   Flutter Pub get para fazer download das dependencias do Flutter
 5) Colocar scripts php em c:\xampp\httdocs\scripts
 
-
+## Notas
 This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
