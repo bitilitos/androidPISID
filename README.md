@@ -2,7 +2,16 @@
 
 Flutter PISID mobile app
 
-## Getting Started
+## Instruções: 
+
+1) Download e instalar Android Studio (Usar JetBrain ToolBox)
+2) Download Flutter https://docs.flutter.dev/get-started/install  e descompactar pasta Flutter (por exemplo, c:\flutter)
+3) No Android Studio, instalar plugin Dart e plugin Flutter (File -> Settings -> Plugins)
+4) No Android Studio:
+  Tools -> Flutter -> Flutter clean (colocar caminho do flutter instalado em 2)
+  Flutter Pub get para fazer download das dependencias do Flutter
+5) Colocar scripts php em c:\xampp\httdocs\scripts
+
 
 This project is a starting point for a Flutter application.
 
