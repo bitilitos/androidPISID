@@ -9,6 +9,8 @@
   Tools -> Flutter -> Flutter clean (colocar caminho do flutter instalado em 2)
   Flutter Pub get para fazer download das dependencias do Flutter
 5) Colocar scripts php em c:\xampp\httdocs\scripts (Estão no Onedrive em BD)
+6) No Android Studio, alterar em main.dart a variavel ipController para o IP da máquina que está a correr
+7) Escolher Edge (web) como simulador
 
 ## Notas
 This project is a starting point for a Flutter application.
