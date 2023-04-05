@@ -8,7 +8,7 @@
 4) No Android Studio:
   Tools -> Flutter -> Flutter clean (colocar caminho do flutter instalado em 2)
   Flutter Pub get para fazer download das dependencias do Flutter
-5) Colocar scripts php em c:\xampp\httdocs\scripts (Estão no Onedrive em BD)
+5) Colocar scripts php em c:\xampp\httdocs\scripts (Estão atualizados para o nosso projeto em scripts php no git)
 
 ## Instruções geração apk:
 
@@ -19,7 +19,7 @@
     Key password: password
 3) Em alternativa podem criar uma chave nova
 4) Escolher o profile da release (ainda só foi feito em debug)
-5) De seguida com o apk gerado, passar para o telemovel e instalar (precisam de dar permissões a apps desconhecidas/não seguras)
+5) De seguida com o apk gerado, passar para o telemovel e instalar (precisam de dar permissões a apps desconhecidas/não seguras, vai depender do dispositivo)
 
 ## Notas
 This project is a starting point for a Flutter application.
