@@ -9,7 +9,7 @@
     //    $password = "password";
 
     $conn = mysqli_connect($db,$username,$password,$database);
-	$sql = "SELECT Room, TotalMouses FROM mousesperroom ORDER BY Room ASC";
+	$sql = "SELECT Room, RatsFinalNumber FROM roommeasurements ORDER BY Room ASC";
 	$result = mysqli_query($conn, $sql);
 	$response["readings"] = array();
 	if ($result){
@@ -18,7 +18,7 @@
 				$ad = array();
 				// Alterar nome dos campos se necessario
 				$ad["Room"] = $r['Room'];
-				$ad["TotalMouses"] = $r['TotalMouses'];
+				$ad["TotalMouses"] = $r['RatsFinalNumber'];
 				array_push($response["readings"], $ad);
 			}
 		}	
