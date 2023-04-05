@@ -49,7 +49,7 @@ class LoginFormState extends State<LoginForm> {
   final _formKey = GlobalKey<FormState>();
   final usernameController = TextEditingController(text: "root");
   final passwordController = TextEditingController();
-  final ipController = TextEditingController(text:"192.168.1.184");
+  final ipController = TextEditingController(text:"10.90.21.100");
   final portController = TextEditingController(text:"80");
 
   @override
@@ -140,7 +140,9 @@ class LoginFormState extends State<LoginForm> {
         'username': usernameController.text.trim(), //get the username text
         'password': passwordController.text.trim() //get password text
       });
+      // response = await http.get(Uri.parse(loginURL));
     } catch (e) {
+      print(e);
       showDialog(
         context: context,
         builder: (context) {
