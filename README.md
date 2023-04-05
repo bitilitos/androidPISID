@@ -1,6 +1,6 @@
 ## Flutter PISID mobile app
 
-## Instruções: 
+## Instruções para instalação:
 
 1) Download e instalar Android Studio (Usar JetBrain ToolBox)
 2) Download Flutter https://docs.flutter.dev/get-started/install  e descompactar pasta Flutter (por exemplo, c:\flutter)
@@ -9,8 +9,17 @@
   Tools -> Flutter -> Flutter clean (colocar caminho do flutter instalado em 2)
   Flutter Pub get para fazer download das dependencias do Flutter
 5) Colocar scripts php em c:\xampp\httdocs\scripts (Estão no Onedrive em BD)
-6) No Android Studio, alterar em main.dart a variavel ipController para o IP da máquina que está a correr a BD (atenção que isto muda ligado à rede ISCTE!!!!)
-7) Escolher Edge (web) como simulador
+
+## Instruções geração apk/utilizazção:
+
+1) No Android Studio ir a Tools -> Flutter -> Open for editing in android studio, escolher abrir numa nova janela
+2) Em Build -> Generate Signed Bundle/APK, escolher APK, escolher a chave teste1.jks:
+    Key store password: password
+    Key alias: key0
+    Key password: password
+3) Em alternativa podem criar uma chave nova
+4) Escolher o profile da release (ainda só foi feito em debug)
+5) De seguida com o apk gerado, passar para o telemovel e instalar (precisam de dar permissões a apps desconhecidas/não seguras)
 
 ## Notas
 This project is a starting point for a Flutter application.
