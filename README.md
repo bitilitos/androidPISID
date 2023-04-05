@@ -10,7 +10,7 @@
   Flutter Pub get para fazer download das dependencias do Flutter
 5) Colocar scripts php em c:\xampp\httdocs\scripts (Estão no Onedrive em BD)
 
-## Instruções geração apk/utilizazção:
+## Instruções geração apk:
 
 1) No Android Studio ir a Tools -> Flutter -> Open for editing in android studio, escolher abrir numa nova janela
 2) Em Build -> Generate Signed Bundle/APK, escolher APK, escolher a chave teste1.jks:
