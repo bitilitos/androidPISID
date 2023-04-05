@@ -12,14 +12,16 @@
 
 ## Instruções geração apk:
 
-1) No Android Studio ir a Tools -> Flutter -> Open for editing in android studio, escolher abrir numa nova janela
-2) Em Build -> Generate Signed Bundle/APK, escolher APK, escolher a chave teste1.jks:
+1) Utilizar o apk em android/app/debug/app-debug.apk 
+   ou gerar novo:
+2) No Android Studio ir a Tools -> Flutter -> Open for editing in android studio, escolher abrir numa nova janela
+3) Em Build -> Generate Signed Bundle/APK, escolher APK, escolher a chave teste1.jks:
     Key store password: password
     Key alias: key0
     Key password: password
-3) Em alternativa podem criar uma chave nova
-4) Escolher o profile da release (ainda só foi feito em debug)
-5) De seguida com o apk gerado, passar para o telemovel e instalar (precisam de dar permissões a apps desconhecidas/não seguras, vai depender do dispositivo)
+4) Em alternativa podem criar uma chave nova
+5) Escolher o profile da release (ainda só foi feito em debug)
+6) De seguida com o apk gerado, passar para o telemovel e instalar (precisam de dar permissões a apps desconhecidas/não seguras, vai depender do dispositivo)
 
 ## Notas
 This project is a starting point for a Flutter application.
