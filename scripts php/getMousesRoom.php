@@ -5,11 +5,11 @@
     $username = $_POST["username"];
     $password = $_POST["password"];
 
-    //    $username = "Catarina";
-    //    $password = "password";
+//  $username = "Catarina";
+//  $password = "password";
 
     $conn = mysqli_connect($db,$username,$password,$database);
-	$sql = "SELECT Room, RatsFinalNumber FROM roommeasurements ORDER BY Room ASC";
+	$sql = "SELECT Room, RatsFinalNumber FROM roomsmeasurements ORDER BY Room ASC";
 	$result = mysqli_query($conn, $sql);
 	$response["readings"] = array();
 	if ($result){

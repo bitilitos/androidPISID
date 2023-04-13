@@ -5,8 +5,8 @@
     $username = $_POST["username"];
     $password = $_POST["password"];
 
-    //    $username = "Catarina";
-    //    $password = "password";
+//    $username = "Catarina";
+//    $password = "password";
 
     $conn = mysqli_connect($db,$username ,$password,$database);
 	$sql = "SELECT Hour, Measure from temperaturemeasurements where Sensor = 2 AND Hour >= now() - interval 10 minute ORDER BY Hour DESC";

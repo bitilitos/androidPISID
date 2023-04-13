@@ -5,11 +5,11 @@
 	$return["message"] = "";
 	$return["success"] = false;
 
-//	$username = $_POST["username"];
-//	$password = $_POST["password"];
+	$username = $_POST["username"];
+	$password = $_POST["password"];
 
-    $username = "Catarina";
-    $password = "password";
+//    $username = "Catarina";
+//    $password = "password";
 
 	
 	try {
