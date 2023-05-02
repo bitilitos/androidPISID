@@ -65,6 +65,11 @@ class _MyHomePageState extends State<ReadingsMain> {
   @override
   Widget build(BuildContext context) {
     getReadings();
+    var barcenas = <BarChartGroupData>[];
+    for (int i=0; i < readingsTimes.length; i++) {
+      barcenas.add(generateGroupData(
+          readingsTimes[i].toInt(), readingsValues[i].toInt()));
+    }
     //sleep(Duration(seconds:2));
     return Scaffold(
       body: Center(
@@ -74,17 +79,16 @@ class _MyHomePageState extends State<ReadingsMain> {
             aspectRatio: 2,
             child: BarChart(
               BarChartData(
-                barGroups: [
-                  generateGroupData(readingsTimes[0].toInt(),readingsValues[0].toInt()),
-                  generateGroupData(readingsTimes[1].toInt(),readingsValues[1].toInt()),
-                  generateGroupData(readingsTimes[2].toInt(),readingsValues[2].toInt()),
-                  generateGroupData(readingsTimes[3].toInt(),readingsValues[3].toInt()),
-                  generateGroupData(readingsTimes[4].toInt(),readingsValues[4].toInt()),
-                  generateGroupData(readingsTimes[5].toInt(),readingsValues[5].toInt()),
-                  generateGroupData(readingsTimes[6].toInt(),readingsValues[6].toInt()),
-                  generateGroupData(readingsTimes[7].toInt(),readingsValues[7].toInt()),
-                  generateGroupData(readingsTimes[8].toInt(),readingsValues[8].toInt()),
-                ],
+                barGroups: barcenas
+                    // generateGroupData(readingsTimes[1].toInt(), readingsValues[1].toInt()),
+                    // generateGroupData(readingsTimes[2].toInt(), readingsValues[2].toInt()),
+                    // generateGroupData(readingsTimes[3].toInt(), readingsValues[3].toInt()),
+                    // generateGroupData(readingsTimes[4].toInt(), readingsValues[4].toInt()),
+                    // generateGroupData(readingsTimes[5].toInt(), readingsValues[5].toInt()),
+                    // generateGroupData(readingsTimes[6].toInt(), readingsValues[6].toInt()),
+                    // generateGroupData(readingsTimes[7].toInt(), readingsValues[7].toInt()),
+                    // generateGroupData(readingsTimes[8].toInt(), readingsValues[8].toInt()),
+                ,
                 barTouchData: BarTouchData(
                     enabled: true,
                     handleBuiltInTouches: false,
