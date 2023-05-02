@@ -8,10 +8,9 @@
 	$username = $_POST["username"];
 	$password = $_POST["password"];
 
-//    $username = "Catarina";
+//    $username = "Raquel Oliveira";
 //    $password = "password";
 
-	
 	try {
 		$conn = mysqli_connect($dbhost, $username, $password, $db);
 		
@@ -21,11 +20,12 @@
 
 		$conn->next_result();
 		$role = mysqli_fetch_assoc($result_query_select)['current_role()'];
-		//if($role == "investigador") { // change role if necessary
+
+		if($role == "Investigador" ) { // change role if necessary
 			$return["success"] = true;
-		//} else {
-			$return["message"] = "This user does not have permission to use the app.";
-		//}
+		} else {
+			$return["message"] = "This user does not have permission to use the app";
+		}
 		
 		$result_query_select->close();
 		mysqli_close($conn);
